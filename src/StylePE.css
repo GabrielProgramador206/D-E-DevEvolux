@@ -1,0 +1,397 @@
+/* Estilos gerais */
+body {
+  background-color: #181818; /* Preto escuro */
+  color: #fff; /* Branco */
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Fonte mais forte para títulos */
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #fff; /* Branco para links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Campo de Pesquisa */
+.search-container {
+    position: relative;
+    width: 300px;
+    margin: 20px auto; /* Centraliza a barra de pesquisa */
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+/*Fim campo de pesquisa*/
+/* Cabeçalho */
+.cab1{
+  background-color: #282828;
+  background-image: url('Imagens/Captura de tela 2024-08-30 182036.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.cab2{
+  background-color: #282828;
+  background-image: url('Imagens/HTML_CSS_Background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.cab3{
+  background-color: #282828;
+  background-image: url('Imagens/Exel_background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.Npag {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Seção de Navegação */
+.cabeçalho {
+  background-color: #000;
+  box-shadow: 0 0 8px #000, 0 0 25px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.title {
+  background-color: #000;
+  box-shadow: 0 0 8px #000, 0 0 25px orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 10;
+  padding: 10px 0;
+
+}
+
+.nav_bar {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #f0f0f0;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  box-shadow: 0 0 5px orange, 0 0 25px orange, 0 0 50px orange;
+  background-color: orange;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+  }
+
+  .nav li {
+      margin-bottom: 10px;
+      margin-right: 0;
+  }
+
+  .nav a {
+      padding: 10px 15px;
+  }
+}
+
+/* Seções */
+section.cabeçalho {
+  padding: 40px 0;
+}
+
+section.txt {
+  padding: 40px 0;
+  margin-left: 15px;
+}
+
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Conteúdo */
+.conteudo {
+  background-color: #282828; /* Preto mais claro para contraste */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Botões */
+button {
+  background-color: #f0f0f0; /* Cinza claro para contraste */
+  color: #181818; /* Preto escuro para texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Cinza mais claro para destaque */
+}
+
+/* Inicio Cards */
+.section-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 95%;
+}
+
+@media (max-width: 768px) {
+  .section-card {
+      grid-template-columns: 1fr;
+  }
+}
+
+.bnt {
+  padding: 5px;
+  margin: 3px;
+  width: 98%;
+  background-color: cyan;
+  border-radius: 10px;
+  border: none;
+}
+
+.bnt:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+  background-color: cyan;
+}
+
+.bnt a.cc {
+  padding: 5px;
+  margin: 0%;
+  width: 100px;
+}
+
+.bnt .cc:hover {
+  color: #000;
+}
+
+.card {
+  width: 100%;
+  background: rgba(255, 255, 255);
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  z-index: 5;
+  box-shadow: 0 0 5px gray, 0 0 25px black;
+}
+
+.card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 16px 16px 0 0;
+  filter: contrast(70%);
+  transition: all 0.6s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card > img:hover {
+  filter: contrast(100%);
+}
+
+.card_conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px 20px;
+}
+
+.card_conteudo > h2 {
+  margin-bottom: 10px;
+  color: black;
+  text-align: center;
+}
+
+.card_conteudo .P1 {
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.card_conteudo > p {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.card_conteudo > ul {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Fim cards */
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+}
+
+aside {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+aside img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px; /* Margem inferior para separar a imagem do texto */
+}
+
+aside p {
+  margin: 0;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.redes-social {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px; /* Adiciona margem superior para separar das informações acima */
+}
+
+.footer-info {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px; /* Adiciona margem superior para separar das redes sociais */
+}
+
+/* Responsividade adicional */
+@media (max-width: 1024px) {
+  header, .cabeçalho, .nav_bar, .Npag, .nav, .section-card, footer {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav li {
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header, .cabeçalho, .nav_bar, .Npag, .nav, .section-card, footer {
+      padding: 10px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header, .cabeçalho, .nav_bar, .Npag, .nav, .section-card, footer {
+      padding: 5px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  aside {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  aside img {
+      margin-bottom: 10px;
+  }
+
+  .redes-social, .footer-info {
+      width: 100%;
+      text-align: center;
+  }
+}

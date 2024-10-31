@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/Formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Formulario de contato</title>
+</head>
+<body>
+    
+    <main>
+
+        <div class="box">
+            <form action="https://formsubmit.co/gabrielprogramadorsenior@gmail.com" method="POST">
+                <fieldset>
+                    <legend><b>Contato</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <label for="Nome" class="labelInput">Nome Completo</label>
+                        <br>
+                        <input type="text" autocomplete="off" name="Nome" class="inputUser" required>
+                        
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <label for="Email" class="labelInput">Email</label>
+                        <br>
+                        <input type="text" autocomplete="off" name="Email" class="inputUser" required>
+                    
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <label for="Telefone" class="labelInput">Telefone</label>
+                        <br>
+                        <input type="tell" autocomplete="off" name="Telefone" class="inputUser" required>
+                        
+                    </div>
+                    <br>
+                    <p>Tipo de Projeto:</p>
+                    <input type="radio" id="Excel" name="Excel" value="Excel" >
+                    <label for="Excel">Excel</label>
+                    <br>
+                    <input type="radio" id="Desing" name="Desing" value="Desing" >
+                    <label for="Desing">Desing</label>
+                    <br>
+                    <input type="radio" id="Pagina_web" name="Pagina_web" value="Pagina_web" >
+                    <label for="Pagina_Web">Pagina Web</label>
+                    <br><br>
+                    <button type="submit" href="index.html">Enviar</button>
+
+                    <input type="hidden" name="_subject" value="Novo CLiente!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+</body>
+    </html>
